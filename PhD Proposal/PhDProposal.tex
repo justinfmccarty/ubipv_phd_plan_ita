@@ -1,0 +1,35 @@
+%MSc main document =============================================================
+
+\documentclass[11pt]{amsart}  %amsart, IEEEtran
+\input{preamble}
+
+\begin{document}
+%front matter ------------------------------------------------------------------
+\pagestyle{plain}
+
+
+\include{./00_front/00_front}
+
+%chapters ----------------------------------------------------------------------
+
+\include{./01_Main/01_Main}
+
+\include{./05_Conclusion/05_Conclusion}
+\include{./06_Backmatter/06_Backmatter}
+
+\clearpage
+\bibliographystyle{unsrtnat} %unsrtnat
+\bibliography{references}
+
+%appendix ----------------------------------------------------------------------
+\clearpage
+%\begin{appendices}
+%\include{./07_Appendix/07_Appendix}
+%\end{appendices}
+
+%back matter -------------------------------------------------------------------
+ 
+%\include{08-back}
+
+\end{document}
+%===============================================================================
