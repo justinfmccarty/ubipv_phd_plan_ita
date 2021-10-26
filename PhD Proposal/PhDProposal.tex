@@ -1,11 +1,14 @@
-%MSc main document =============================================================
+%PhD main document =============================================================
 
-\documentclass[11pt]{amsart}  %amsart, IEEEtran
+\documentclass[a4paper,11pt,oneside]{amsart}  %amsart, IEEEtran
 \input{preamble}
 
 \begin{document}
 %front matter ------------------------------------------------------------------
 \pagestyle{plain}
+\pagenumbering{roman}
+\renewcommand\sectionmark[1]{%
+  \markright{\thesection\ #1}}
 
 
 \include{./00_Front/00_Front}
@@ -19,13 +22,15 @@
 
 \clearpage
 \bibliographystyle{unsrtnat} %unsrtnat
-\bibliography{references}
+\bibliography{bipv_research_plan.bib}
 
 %appendix ----------------------------------------------------------------------
 \clearpage
-%\begin{appendices}
-%\include{./07_Appendix/07_Appendix}
-%\end{appendices}
+\begin{appendices}
+
+\include{./07_Appendix/07_Appendix}
+
+\end{appendices}
 
 %back matter -------------------------------------------------------------------
  
